@@ -38,7 +38,6 @@ const displayEntries = () => {
     let details = document.getElementById('user_entries');
     details.innerHTML = table;
 }
-
 const saveUserForm = (event) => {
     event.preventDefault();
     const FullName = document.getElementById('name').value;
@@ -69,6 +68,5 @@ const saveUserForm = (event) => {
         userForm.reset();
     }
 }
-
 userForm.addEventListener('submit', saveUserForm);
 displayEntries();
